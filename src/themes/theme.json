@@ -27,7 +27,22 @@
 
         "black600": "#191919",             
         "black700": "#1A1A1A",
-        "black900": "#000000"
+        "black900": "#000000",
+        
+        "yellow-50": "#FFF6E8",
+        "yellow-100": "#FFF0DA",
+        "yellow-150": "#E5D3B5",
+        "yellow-250": "#D7C4A5",
+        "yellow-400": "#FFD888",
+        "yellow-500": "#DEA033",
+        "yellow-700": "#F7B239",
+        "orange-50": "#FFB386",
+        "orange-150": "#D79771",
+        "brown-500": "#A66253",
+        "brown-600": "#B05B3B",
+        "brown-700": "#734939",
+        "brown-800": "#59392C",
+        "red-200": "#D94E4E"
     },
 
     "typography": {

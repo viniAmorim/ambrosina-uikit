@@ -101,3 +101,17 @@ LeftIcon.args = {
   children: 'Button',
   leftIcon: <Mail />,
 };
+
+export const BuyCoupon = Template.bind({});
+BuyCoupon.args = {
+  children: 'Comprar cupom',
+  size: 'md',
+  variant: 'buycoupon',
+};
+
+export const BuyCouponDisabled = Template.bind({});
+BuyCouponDisabled.args = {
+  children: 'Comprar cupom',
+  size: 'md',
+  variant: 'buycoupondisabled',
+};

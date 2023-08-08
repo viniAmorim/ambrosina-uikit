@@ -12,7 +12,9 @@ export interface StyledButtonProps extends Omit<MantineButtonProps, 'color'> {
     | 'tertiary'
     | 'transparent'
     | 'apple'
-    | 'google';
+    | 'google'
+    | 'buycoupon'
+    | 'buycoupondisabled';
   border: 'default' | 'right' | 'left';
   size: 'sm' | 'md' | 'lg';
 }
@@ -88,6 +90,30 @@ const typeModifier = {
     background: ${({ theme }) => theme.colors.lighBlue500};
     color: ${({ theme }) => theme.colors.white100};
     border: 1px solid ${({ theme }) => theme.colors.white100};
+  `,
+  buycoupon: css`
+    background: ${({ theme }) => theme.colors['yellow-700']};
+    color: ${({ theme }) => theme.colors['brown-700']};
+    border: 1px solid ${({ theme }) => theme.colors.white100};
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors['yellow-500']};
+      color: ${({ theme }) => theme.colors['brown-800']};
+    }
+  `,
+  buycoupondisabled: css`
+    background: ${({ theme }) => theme.colors['yellow-700']};
+    color: rgba(115, 73, 57, 0.6);
+    border: 1px solid ${({ theme }) => theme.colors.white100};
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+    border-radius: 8px;
+    background: rgba(247, 178, 57, 0.6);
   `,
 };
 
