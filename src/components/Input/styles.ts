@@ -3,16 +3,22 @@ import styled from 'styled-components';
 
 export const Input = styled(InputComponent)`
   & .mantine-TextInput-input {
-    border-radius: 4px;
-    height: 47px;
+    border-radius: 12px;
+    border-color: ${({ theme }) => theme.colors['yellow-100']};
+    background-color: ${({ theme }) => theme.colors['yellow-100']};
+    height: 50px;
     width: 100%;
 
+    &::placeholder {
+      color: ${({ theme }) => theme.colors['brown-500']};
+    }
+
     &:focus {
-      border: 1px solid ${({ theme }) => theme.colors.purple700};
+      border: 2px solid ${({ theme }) => theme.colors['yellow-150']};
     }
 
     &:hover {
-      border: 1px solid ${({ theme }) => theme.colors.purple700};
+      border: 2px solid ${({ theme }) => theme.colors['yellow-150']};
     }
   }
   & .mantine-TextInput-label {
@@ -21,6 +27,6 @@ export const Input = styled(InputComponent)`
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: ${({ theme }) => theme.colors.purple700};
+    color: ${({ theme }) => theme.colors['brown-700']};
   }
 `;
