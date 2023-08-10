@@ -60,4 +60,8 @@ export * from './Text';
 export { default as Title } from './Title';
 export * from './Title';
 
+export { default as Tab } from './Tab';
+
+export { default as TabDetails } from './TabDetails';
+
 export { default as UserCard } from './UserCard';

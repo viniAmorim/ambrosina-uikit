@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 export const Title = styled(TitleComponent)`
   color: ${({ theme }) => theme.colors['brown-700']};
   text-align: center;
+  margin-top: 10px;
   font-family: Josefin Sans;
   font-size: 22px;
   font-style: normal;
@@ -17,5 +18,6 @@ export const Title = styled(TitleComponent)`
 
 export const LeftIncon = styled.div`
   margin-right: 10px;
+  margin-top: 10px;
   color: ${({ theme }) => theme.colors['brown-700']};
 `;

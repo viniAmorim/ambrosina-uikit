@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Input = styled(InputComponent)`
   & .mantine-TextInput-input {
     border-radius: 12px;
-    border-color: ${({ theme }) => theme.colors['yellow-100']};
+    border-color: ${({ theme }) => theme.colors['yellow-150']};
     background-color: ${({ theme }) => theme.colors['yellow-100']};
     height: 50px;
     width: 100%;

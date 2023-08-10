@@ -4,7 +4,7 @@ import * as Styled from './styles';
 
 export interface TitleProps extends BaseHTMLAttributes<HTMLTitleElement> {
   children: ReactNode;
-  leftIcon: ReactNode;
+  leftIcon?: ReactNode;
 }
 
 const Title = ({ children, leftIcon }: TitleProps) => {

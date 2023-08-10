@@ -14,7 +14,8 @@ export interface StyledButtonProps extends Omit<MantineButtonProps, 'color'> {
     | 'apple'
     | 'google'
     | 'buycoupon'
-    | 'buycoupondisabled';
+    | 'buycoupondisabled'
+    | 'save';
   border: 'default' | 'right' | 'left';
   size: 'sm' | 'md' | 'lg';
 }
@@ -114,6 +115,19 @@ const typeModifier = {
 
     border-radius: 8px;
     background: rgba(247, 178, 57, 0.6);
+  `,
+  save: css`
+    background: ${({ theme }) => theme.colors['orange-150']};
+    color: ${({ theme }) => theme.colors.white100};
+    border: 1px solid ${({ theme }) => theme.colors.white100};
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors['yellow-500']};
+      color: ${({ theme }) => theme.colors['brown-800']};
+    }
   `,
 };
 
