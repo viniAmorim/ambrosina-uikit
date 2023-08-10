@@ -8,17 +8,53 @@ export const Wrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
 
-  & .react-tel-input input {
-    border-radius: 4px;
-    height: 47px;
-    width: 100%;
-
+  & .selected-flag {
     &:focus {
-      border: 1px solid ${({ theme }) => theme.colors.purple700};
+      background-color: ${({ theme }) => theme.colors['yellow-100']};
     }
 
     &:hover {
-      border: 1px solid ${({ theme }) => theme.colors.purple700};
+      background-color: ${({ theme }) => theme.colors['yellow-100']};
+    }
+  }
+
+  & .flag-dropdown {
+    background-color: ${({ theme }) => theme.colors['yellow-100']};
+    border-radius: 12px 0px 0px 12px;
+    border-color: ${({ theme }) => theme.colors['yellow-150']};
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors['brown-500']};
+    }
+
+    &:focus {
+      border: 2px solid ${({ theme }) => theme.colors['yellow-150']};
+      background-color: ${({ theme }) => theme.colors['yellow-100']};
+    }
+
+    &:hover {
+      border: 2px solid ${({ theme }) => theme.colors['yellow-150']};
+      background-color: ${({ theme }) => theme.colors['yellow-100']};
+    }
+  }
+
+  & .react-tel-input input {
+    border-radius: 12px;
+    border-color: ${({ theme }) => theme.colors['yellow-150']};
+    background-color: ${({ theme }) => theme.colors['yellow-100']};
+    height: 47px;
+    width: 100%;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors['brown-500']};
+    }
+
+    &:focus {
+      border: 1px solid ${({ theme }) => theme.colors['yellow-250']};
+    }
+
+    &:hover {
+      border: 1px solid ${({ theme }) => theme.colors['yellow-150']};
     }
 
     ${({ hasError }) =>
@@ -52,7 +88,7 @@ export const Label = styled.p`
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  color: ${({ theme }) => theme.colors.purple700};
+  color: ${({ theme }) => theme.colors['brown-700']};
   margin-top: 0;
   margin-bottom: 8px;
 `;

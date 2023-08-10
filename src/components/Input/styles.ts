@@ -11,6 +11,7 @@ export const Input = styled(InputComponent)`
 
     &::placeholder {
       color: ${({ theme }) => theme.colors['brown-500']};
+      background-color: ${({ theme }) => theme.colors['yellow-100']};
     }
 
     &:focus {

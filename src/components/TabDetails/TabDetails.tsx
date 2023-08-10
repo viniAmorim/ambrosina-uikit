@@ -11,7 +11,7 @@ import Title from '../Title';
 import * as Styled from './styles';
 
 export interface TabDetailsProps extends BaseHTMLAttributes<HTMLTitleElement> {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const TabDetails = ({ children }: TabDetailsProps) => {
