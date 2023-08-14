@@ -16,6 +16,7 @@ const Text = forwardRef<HTMLParagraphElement, ParagraphProps>(function Text(
     fontSize = '24px',
     fontColor = 'black700',
     lineHeight = '34px',
+    variant = 'primary',
     onClick,
     ...rest
   },
@@ -27,6 +28,7 @@ const Text = forwardRef<HTMLParagraphElement, ParagraphProps>(function Text(
       fontSize={fontSize}
       fontColor={fontColor}
       lineHeight={lineHeight}
+      variant={variant}
       onClick={onClick}
       ref={ref}
       {...rest}

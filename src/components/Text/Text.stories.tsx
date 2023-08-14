@@ -44,5 +44,6 @@ LineHeight.args = {
 export const Link = Template.bind({});
 Link.args = {
   children: 'Ad astra per aspera',
+  variant: 'link',
   onClick: () => alert('Click!'),
 };
